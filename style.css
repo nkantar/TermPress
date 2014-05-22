@@ -1,0 +1,77 @@
+/*
+Theme Name: TermPress
+Theme URI: http://github.com/nkantar/termpress
+Author: Nikola Kantar
+Author URI: http://nkantar.com/
+Description: This is a minimal, responsive WordPress theme that powers nkantar.com
+Version: 0.1
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+terminal, monospaced, grayscale
+Text Domain: termpress
+*/
+* {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  color: #333333;
+  font-size: 18px;
+  line-height: 150%;
+  text-shadow: 1px 1px 1px #dddddd; }
+  * a {
+    text-decoration: none; }
+    * a:hover {
+      text-decoration: underline; }
+
+body {
+  background: black; }
+  body #wrapper {
+    width: 85%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white; }
+    body #wrapper header {
+      margin: 0 0 75px;
+      padding: 0 0 15px;
+      border-bottom: 1px solid black; }
+      body #wrapper header h1 {
+        margin: 0; }
+        body #wrapper header h1 a {
+          font-size: 150%;
+          color: #ff7300;
+          text-shadow: 2px 2px 2px #dddddd; }
+      body #wrapper header span {
+        font-size: 75%;
+        color: #9900ea; }
+    body #wrapper #posts article {
+      margin: 50px 0;
+      padding: 0 0 50px 0;
+      border-bottom: 1px solid #ffe600; }
+      body #wrapper #posts article:last-child {
+        border: none; }
+      body #wrapper #posts article h2 {
+        margin: 0; }
+        body #wrapper #posts article h2 a {
+          font-size: 125%;
+          font-weight: 700; }
+      body #wrapper #posts article p a {
+        color: #ea0000; }
+      body #wrapper #posts article p:last-child {
+        margin-bottom: 0; }
+      body #wrapper #posts article p.meta {
+        margin: 0; }
+        body #wrapper #posts article p.meta a {
+          font-size: 75%;
+          color: #999999; }
+    body #wrapper footer {
+      margin: 75px 0 0;
+      padding: 15px 0 0;
+      border-top: 1px solid black;
+      overflow: auto; }
+      body #wrapper footer span a {
+        color: #999999; }
+      body #wrapper footer span#previous {
+        float: left; }
+      body #wrapper footer span#next {
+        float: right; }

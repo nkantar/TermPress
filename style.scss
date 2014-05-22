@@ -1,0 +1,130 @@
+/*
+Theme Name: TermPress
+Theme URI: http://github.com/nkantar/termpress
+Author: Nikola Kantar
+Author URI: http://nkantar.com/
+Description: This is a minimal, responsive WordPress theme that powers nkantar.com
+Version: 0.1
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+terminal, monospaced, grayscale
+Text Domain: termpress
+*/
+
+@import "variables";
+
+// custom resets and defaults
+* {
+    font-family: $inconsolata;
+    font-weight: $normal;
+    color: $dark-gray;
+    font-size: 18px;
+    line-height: 150%;
+    text-shadow: 1px 1px 1px $lighter-gray;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+body {
+    background: black;
+
+    #wrapper {
+        width: 85%;
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 25px;
+        background: white;
+
+        header {
+            margin: 0 0 75px;
+            padding: 0 0 15px;
+            border-bottom: 1px solid black;
+
+            h1 {
+                margin: 0;
+
+                a {
+                    font-size: 150%;
+                    color: $orange;
+                    text-shadow: 2px 2px 2px $lighter-gray;
+                }
+            }
+
+            span {
+                font-size: 75%;
+                color: $violet;
+            }
+        }
+
+        #posts {
+
+            article {
+                margin: 50px 0;
+                padding: 0 0 50px 0;
+                border-bottom: 1px solid $yellow;
+
+                &:last-child {
+                    border: none;
+                }
+
+                h2 {
+                    margin: 0;
+
+                    a {
+                        font-size: 125%;
+                        font-weight: $bold;
+                    }
+                }
+
+                p {
+
+                    a {
+                        color: $red;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &.meta {
+                        margin: 0;
+
+                        a {
+                            font-size: 75%;
+                            color: $light-gray;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            margin: 75px 0 0;
+            padding: 15px 0 0;
+            border-top: 1px solid black;
+            overflow: auto;
+
+            span {
+
+                a {
+                    color: $light-gray;
+                }
+
+                &#previous {
+                    float: left;
+                }
+
+                &#next {
+                    float: right;
+                }
+            }
+        }
+    }
+}
